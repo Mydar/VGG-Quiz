@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Rubik|Simonetta&display=swap" rel="stylesheet">
+    <script src="Scripts/jquery-3.0.0.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <title>Venture Garden Group Quiz</title>
+</head>
+<body>
+    <div class="jumbotron-fluid" style="background-color: azure">
+        <h1 class="display-3 text-center" style="color: rgb(0,98,0); font-family: 'Oswald';">VENTURE GARDEN GROUP</h1>
+        <p class="text-center" style="color: #507642; font-family: 'Simonetta'; font-size: 20px;">Transforming AFRICA using INNOVATIVE TECHNOLOGIES</p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <a href="#" class="btn btn-success btn-outline-secondary btn-lg hide" role="button" id="previous" onclick="onclickPrevious()"><span style="color: white">Previous</span></a>
+            </div>
+            <div class="col-sm-6">
+                <div id="container">
+                    <div class="question">
+                        <form id="form" action="">
+                            <div class="form-group">
+                                <label for="input" class="d-block">
+                                    <span id="text" style="width:100%; font-family: 'Oswald'; color: #507642;">Hi there! Let's see how well you know VGG!</span>
+                                </label>
+                                <input id="input" placeholder="Answer" class="hide" />
+                            </div>
+                            <div class="form-group">
+                                <div class="row justify-content-center">
+                                    <button type="submit" class="btn btn-success btn-outline-secondary btn-lg align-items-center ">
+                                        <span class="text" style="color: white" id="startButton">NEXT</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="form-group" id="question_selector"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+    </div>
+
+    <script src="logic.js"></script>
+</body>
+</html>
